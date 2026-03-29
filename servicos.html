@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços | VITTORIO | Clínica Veterinária</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body>
+    <!-- Header (Same as index) -->
+    <header class="glass-header">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="font-bebas text-2xl tracking-tighter text-white">VITTORIO <span class="text-primary">|</span> <span class="text-sm font-montserrat font-light tracking-widest opacity-70">VET</span></span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Home</a>
+          <a href="servicos.html" class="text-sm uppercase tracking-widest font-semibold text-primary">Serviços</a>
+          <a href="sobre.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Sobre</a>
+          <a href="emergencia.html" class="text-sm uppercase tracking-widest font-semibold text-red-500 hover:text-red-400 transition-colors">Emergência</a>
+          <a href="agendamentos.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Agendamentos</a>
+          <a href="contato.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Contato</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="agendamentos.html" class="hidden sm:block btn-primary py-2 px-5 text-xs">Agendar Consulta</a>
+          <button id="menu-btn" class="lg:hidden text-white text-2xl"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu">
+      <button id="close-btn" class="absolute top-8 right-8 text-3xl text-white"><i class="fa-solid fa-xmark"></i></button>
+      <a href="index.html" class="text-3xl font-bebas tracking-widest">Home</a>
+      <a href="servicos.html" class="text-3xl font-bebas tracking-widest text-primary">Serviços</a>
+      <a href="sobre.html" class="text-3xl font-bebas tracking-widest">Sobre</a>
+      <a href="emergencia.html" class="text-3xl font-bebas tracking-widest text-red-500">Emergência</a>
+      <a href="agendamentos.html" class="text-3xl font-bebas tracking-widest">Agendamentos</a>
+      <a href="contato.html" class="text-3xl font-bebas tracking-widest">Contato</a>
+    </div>
+
+    <main>
+      <section class="py-24 bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-20 reveal">
+            <span class="font-yellowtail text-2xl text-highlight mb-4 block">Nossa Especialidade</span>
+            <h1 class="text-6xl md:text-7xl mb-6">Serviços <span class="text-primary">Especializados</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">Oferecemos o que há de mais moderno na medicina veterinária mundial para garantir o melhor tratamento para o seu pet.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Consulta -->
+            <div class="card-premium flex flex-col h-full reveal">
+              <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=600" alt="Consultation" class="w-full h-48 object-cover rounded-xl mb-6" referrerPolicy="no-referrer">
+              <h3 class="text-3xl mb-4">Consulta Geral</h3>
+              <p class="text-gray-400 mb-8 flex-grow">Avaliação completa da saúde do seu pet, com foco em prevenção e diagnóstico precoce de patologias.</p>
+              <a href="agendamentos.html" class="btn-outline text-center">Agendar</a>
+            </div>
+
+            <!-- Vacinação -->
+            <div class="card-premium flex flex-col h-full reveal" style="transition-delay: 0.1s">
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600" alt="Vaccination" class="w-full h-48 object-cover rounded-xl mb-6" referrerPolicy="no-referrer">
+              <h3 class="text-3xl mb-4">Vacinação</h3>
+              <p class="text-gray-400 mb-8 flex-grow">Protocolos vacinais personalizados de acordo com o estilo de vida e necessidades do seu animal.</p>
+              <a href="agendamentos.html" class="btn-outline text-center">Agendar</a>
+            </div>
+
+            <!-- Cirurgia -->
+            <div class="card-premium flex flex-col h-full reveal" style="transition-delay: 0.2s">
+              <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=600" alt="Surgery" class="w-full h-48 object-cover rounded-xl mb-6" referrerPolicy="no-referrer">
+              <h3 class="text-3xl mb-4">Cirurgias</h3>
+              <p class="text-gray-400 mb-8 flex-grow">Centro cirúrgico de alta complexidade com monitoramento anestésico multiparamétrico constante.</p>
+              <a href="agendamentos.html" class="btn-outline text-center">Agendar</a>
+            </div>
+
+            <!-- Exames -->
+            <div class="card-premium flex flex-col h-full reveal">
+              <img src="https://images.unsplash.com/photo-1579154235828-4519e39f181d?auto=format&fit=crop&q=80&w=600" alt="Exams" class="w-full h-48 object-cover rounded-xl mb-6" referrerPolicy="no-referrer">
+              <h3 class="text-3xl mb-4">Exames Laboratoriais</h3>
+              <p class="text-gray-400 mb-8 flex-grow">Laboratório próprio para resultados rápidos em hemogramas, bioquímicos e citologias.</p>
+              <a href="agendamentos.html" class="btn-outline text-center">Agendar</a>
+            </div>
+
+            <!-- Internação -->
+            <div class="card-premium flex flex-col h-full reveal" style="transition-delay: 0.1s">
+              <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600" alt="Hospitalization" class="w-full h-48 object-cover rounded-xl mb-6" referrerPolicy="no-referrer">
+              <h3 class="text-3xl mb-4">Internação 24h</h3>
+              <p class="text-gray-400 mb-8 flex-grow">Acompanhamento intensivo para pacientes que necessitam de cuidados constantes e medicação assistida.</p>
+              <a href="agendamentos.html" class="btn-outline text-center">Agendar</a>
+            </div>
+
+            <!-- Especialidades -->
+            <div class="card-premium flex flex-col h-full reveal" style="transition-delay: 0.2s">
+              <img src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?auto=format&fit=crop&q=80&w=600" alt="Specialties" class="w-full h-48 object-cover rounded-xl mb-6" referrerPolicy="no-referrer">
+              <h3 class="text-3xl mb-4">Especialidades</h3>
+              <p class="text-gray-400 mb-8 flex-grow">Cardiologia, Dermatologia, Oncologia e Ortopedia com profissionais renomados no mercado.</p>
+              <a href="agendamentos.html" class="btn-outline text-center">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-dark-bg border-t border-white/5 pt-24 pb-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div>
+            <a href="index.html" class="flex items-center gap-2 mb-6">
+              <span class="font-bebas text-3xl tracking-tighter text-white">VITTORIO <span class="text-primary">|</span> <span class="text-sm font-montserrat font-light tracking-widest opacity-70">VET</span></span>
+            </a>
+            <p class="text-gray-500 mb-8">Referência em medicina veterinária premium. Cuidado especializado 24 horas por dia.</p>
+            <div class="flex gap-4">
+              <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xl mb-6">Links Rápidos</h4>
+            <ul class="flex flex-col gap-4 text-gray-500">
+              <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+              <li><a href="servicos.html" class="hover:text-primary transition-colors">Serviços</a></li>
+              <li><a href="sobre.html" class="hover:text-primary transition-colors">Sobre Nós</a></li>
+              <li><a href="emergencia.html" class="hover:text-primary transition-colors">Emergência</a></li>
+              <li><a href="agendamentos.html" class="hover:text-primary transition-colors">Agendamentos</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl mb-6">Contato</h4>
+            <ul class="flex flex-col gap-4 text-gray-500">
+              <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-primary mt-1"></i><span>Av. Paulista, 1000 - Jardins, São Paulo - SP</span></li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-primary"></i><span>(11) 99999-8888</span></li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-primary"></i><span>contato@vittoriovet.com.br</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl mb-6">Horários</h4>
+            <ul class="flex flex-col gap-4 text-gray-500">
+              <li class="flex justify-between"><span>Clínica Geral:</span><span class="text-white">08h - 20h</span></li>
+              <li class="flex justify-between"><span>Emergência:</span><span class="text-red-500 font-bold">24 Horas</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-white/5 pt-8 text-center text-gray-600 text-sm">
+          <p>&copy; 2026 VITTORIO | Clínica Veterinária. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

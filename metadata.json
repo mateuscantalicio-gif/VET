@@ -1,0 +1,7 @@
+{
+  "name": "VITTORIO | Clínica Veterinária",
+  "description": "Site institucional premium para clínica veterinária de alto padrão, com atendimento 24h e serviços especializados.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

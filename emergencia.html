@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergência 24h | VITTORIO | Clínica Veterinária</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="bg-red-950/10">
+    <!-- Header -->
+    <header class="glass-header">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="font-bebas text-2xl tracking-tighter text-white">VITTORIO <span class="text-primary">|</span> <span class="text-sm font-montserrat font-light tracking-widest opacity-70">VET</span></span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Home</a>
+          <a href="servicos.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Serviços</a>
+          <a href="sobre.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Sobre</a>
+          <a href="emergencia.html" class="text-sm uppercase tracking-widest font-semibold text-red-500">Emergência</a>
+          <a href="agendamentos.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Agendamentos</a>
+          <a href="contato.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Contato</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button id="menu-btn" class="lg:hidden text-white text-2xl"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="min-h-[80vh] flex items-center py-24">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto bg-card-bg border-2 border-red-500/30 rounded-[3rem] p-12 md:p-20 text-center reveal">
+          <div class="w-24 h-24 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-10 animate-pulse">
+            <i class="fa-solid fa-truck-medical text-4xl text-white"></i>
+          </div>
+          
+          <h1 class="text-6xl md:text-8xl text-red-500 mb-6">Emergência <span class="text-white">24 Horas</span></h1>
+          <p class="text-xl text-gray-400 mb-12 leading-relaxed">Não perca tempo. Se o seu pet precisa de atendimento urgente, nossa equipe está pronta para recebê-lo agora mesmo. Atendimento imediato sem necessidade de agendamento prévio.</p>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <a href="https://wa.me/5511999998888" class="flex items-center justify-center gap-4 bg-[#25D366] hover:bg-[#1eb956] text-white py-6 rounded-2xl text-2xl font-bold transition-all duration-300">
+              <i class="fa-brands fa-whatsapp text-3xl"></i>
+              WhatsApp Emergência
+            </a>
+            <a href="tel:+5511999998888" class="flex items-center justify-center gap-4 bg-red-600 hover:bg-red-700 text-white py-6 rounded-2xl text-2xl font-bold transition-all duration-300">
+              <i class="fa-solid fa-phone-flip text-3xl"></i>
+              Ligar Agora
+            </a>
+          </div>
+          
+          <div class="mt-16 p-8 bg-white/5 rounded-2xl inline-block">
+            <p class="text-gray-500 uppercase tracking-widest text-sm mb-2">Localização</p>
+            <p class="text-xl">Av. Paulista, 1000 - Jardins, São Paulo - SP</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-12 text-center text-gray-600 text-sm">
+      <div class="container mx-auto px-6">
+        <p>&copy; 2026 VITTORIO | Clínica Veterinária. Atendimento de Emergência 24h.</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

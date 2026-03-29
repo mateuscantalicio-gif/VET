@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | VITTORIO | Clínica Veterinária</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="glass-header">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="font-bebas text-2xl tracking-tighter text-white">VITTORIO <span class="text-primary">|</span> <span class="text-sm font-montserrat font-light tracking-widest opacity-70">VET</span></span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Home</a>
+          <a href="servicos.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Serviços</a>
+          <a href="sobre.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Sobre</a>
+          <a href="emergencia.html" class="text-sm uppercase tracking-widest font-semibold text-red-500 hover:text-red-400 transition-colors">Emergência</a>
+          <a href="agendamentos.html" class="text-sm uppercase tracking-widest font-semibold hover:text-primary transition-colors">Agendamentos</a>
+          <a href="contato.html" class="text-sm uppercase tracking-widest font-semibold text-primary">Contato</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button id="menu-btn" class="lg:hidden text-white text-2xl"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu">
+      <button id="close-btn" class="absolute top-8 right-8 text-3xl text-white"><i class="fa-solid fa-xmark"></i></button>
+      <a href="index.html" class="text-3xl font-bebas tracking-widest">Home</a>
+      <a href="servicos.html" class="text-3xl font-bebas tracking-widest">Serviços</a>
+      <a href="sobre.html" class="text-3xl font-bebas tracking-widest">Sobre</a>
+      <a href="emergencia.html" class="text-3xl font-bebas tracking-widest text-red-500">Emergência</a>
+      <a href="agendamentos.html" class="text-3xl font-bebas tracking-widest">Agendamentos</a>
+      <a href="contato.html" class="text-3xl font-bebas tracking-widest text-primary">Contato</a>
+    </div>
+
+    <main class="py-24">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-20 reveal">
+          <h1 class="text-6xl md:text-7xl mb-6">Fale <span class="text-primary">Conosco</span></h1>
+          <p class="text-gray-400 max-w-2xl mx-auto text-lg">Estamos localizados no coração de São Paulo, prontos para atender você e seu melhor amigo.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 mb-20">
+          <div class="card-premium text-center reveal">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fa-solid fa-location-dot text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-2xl mb-4">Endereço</h3>
+            <p class="text-gray-400">Av. Paulista, 1000 - Jardins<br>São Paulo - SP, 01310-100</p>
+          </div>
+
+          <div class="card-premium text-center reveal" style="transition-delay: 0.1s">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fa-solid fa-phone text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-2xl mb-4">Telefones</h3>
+            <p class="text-gray-400">Geral: (11) 99999-8888<br>Emergência: (11) 99999-7777</p>
+          </div>
+
+          <div class="card-premium text-center reveal" style="transition-delay: 0.2s">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fa-solid fa-envelope text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-2xl mb-4">E-mail</h3>
+            <p class="text-gray-400">contato@vittoriovet.com.br<br>vagas@vittoriovet.com.br</p>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="w-full h-[500px] bg-card-bg rounded-[3rem] overflow-hidden border border-white/10 relative reveal">
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+            <i class="fa-solid fa-map-location-dot text-6xl text-primary/30 mb-6"></i>
+            <h3 class="text-3xl mb-4">Localização Privilegiada</h3>
+            <p class="text-gray-500 max-w-md">No Google Maps, procure por "Vittorio Clínica Veterinária" para chegar com facilidade via GPS.</p>
+            <a href="https://maps.google.com" target="_blank" class="btn-outline mt-8">Abrir no Google Maps</a>
+          </div>
+          <!-- Real embed would go here -->
+          <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-bg border-t border-white/5 py-12 text-center">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-center gap-8 mb-8">
+          <a href="#" class="text-gray-500 hover:text-primary transition-colors text-2xl"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-gray-500 hover:text-primary transition-colors text-2xl"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="text-gray-500 hover:text-primary transition-colors text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="text-gray-600 text-sm">&copy; 2026 VITTORIO | Clínica Veterinária. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
